@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./main.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main-content">
+    <div class="wrapper">
+      <!-- Header with title and theme toggle -->
+      <header class="dashboard-header">
+      <div class="title-wrapper">
+        <h2 class="title">Social Media Dashboard</h2>
+        <p class="subtitle">Total Followers: 23,004</p>
+      </div>
+      <!-- Toggle switch wrapper -->
+      <div class="theme-toggle-wrapper">
+        <p class="theme-value">Dark Mode</p>
+        <div class="switch">
+          <input type="checkbox" name="theme-switch" id="theme-switch">
+          <label for="theme-switch" class="switch-label"></label>
+        </div>
+      </div>
+      </header>
+      <!-- Social Media Main Stats -->
+      <div class="social-media-stats d-grid">
+        <!-- Social media account -->
+        <article class="social-media-account facebook">
+          <div class="author-wrapper">
+            <img src="./images/icon-facebook.svg" alt="facebook icon" class="sm-icon">
+            <p class="author">@nathanf</p>
+          </div>
+          <p class="number-total">1987</p>
+          <p class="followers">followers</p>
+          <div class="daily-status increase"><img src="./images/icon-up.svg" alt="arrow up" class="arrow-icon"><span>12 Today</span></div>
+        </article>
+         <!-- Social media account -->
+         <article class="social-media-account twitter">
+          <div class="author-wrapper">
+            <img src="./images/icon-twitter.svg" alt="twitter icon" class="sm-icon">
+            <p class="author">@nathanf</p>
+          </div>
+          <p class="number-total">1044</p>
+          <p class="followers">followers</p>
+          <div class="daily-status increase"><img src="./images/icon-up.svg" alt="arrow up" class="arrow-icon"><span>99 Today</span></div>
+        </article>
+        <!-- Social media account -->
+        <article class="social-media-account instagram">
+          <div class="author-wrapper">
+            <img src="./images/icon-instagram.svg" alt="instagram icon" class="sm-icon">
+            <p class="author">@realnathanf</p>
+          </div>
+          <p class="number-total">11k</p>
+          <p class="followers">followers</p>
+          <div class="daily-status increase"><img src="./images/icon-up.svg" alt="arrow up" class="arrow-icon"><span>1099 Today</span></div>
+        </article>
+        <!-- Social media account -->
+        <article class="social-media-account youtube">
+          <div class="author-wrapper">
+            <img src="./images/icon-youtube.svg" alt="youtube icon" class="sm-icon">
+            <p class="author">Nathan F.</p>
+          </div>
+          <p class="number-total">8239</p>
+          <p class="followers">subscribers</p>
+          <div class="daily-status decrease"><img src="./images/icon-down.svg" alt="arrow down" class="arrow-icon"><span>144 Today</span></div>
+        </article>  
+      </div>
+      <!-- Daily Overview -->
+      <div class="daily-overview-wrapper">
+        <h3 class="daily-title">Overview - Today</h3>
+        <div class="social-media-stats-daily d-grid gap-sm">
+          <!-- Daily card -->
+          <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="facebook icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">87</p>
+              <div class="percent-daily"><img src="./images/icon-up.svg" alt="icon up" class="icon-up_sm"> <span>3%</span></div>
+            </div>
+          </article>
+           <!-- Daily card -->
+           <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Likes</p>
+              <img src="./images/icon-facebook.svg" alt="facebook icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">52</p>
+              <div class="percent-daily decrease"><img src="./images/icon-down.svg" alt="icon down" class="icon-down_sm"> <span>2%</span></div>
+            </div>
+          </article>
+           <!-- Daily card -->
+           <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Likes</p>
+              <img src="./images/icon-instagram.svg" alt="instagram icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">5462</p>
+              <div class="percent-daily"><img src="./images/icon-up.svg" alt="icon up" class="icon-up_sm"> <span>2257%</span></div>
+            </div>
+          </article>
+          <!-- Daily card -->
+          <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Profile Views</p>
+              <img src="./images/icon-instagram.svg" alt="instagram icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">52k</p>
+              <div class="percent-daily"><img src="./images/icon-up.svg" alt="icon up" class="icon-up_sm"> <span>1375%</span></div>
+            </div>
+          </article>
+           <!-- Daily card -->
+           <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="twitter icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">117</p>
+              <div class="percent-daily"><img src="./images/icon-up.svg" alt="icon up" class="icon-up_sm"> <span>303%</span></div>
+            </div>
+          </article>
+           <!-- Daily card -->
+           <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Likes</p>
+              <img src="./images/icon-twitter.svg" alt="twitter icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">507</p>
+              <div class="percent-daily"><img src="./images/icon-up.svg" alt="icon up" class="icon-up_sm"> <span>553%</span></div>
+            </div>
+          </article>
+          <!-- Daily card -->
+          <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Likes</p>
+              <img src="./images/icon-youtube.svg" alt="youtube icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">107</p>
+              <div class="percent-daily decrease"><img src="./images/icon-down.svg" alt="icon down" class="icon-down_sm"> <span>19%</span></div>
+            </div>
+          </article>
+          <!-- Daily card -->
+          <article class="daily-overview">
+            <div class="overview-header">
+              <p class="overview-title">Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="youtube icon" class="sm-icon-small">
+            </div>
+            <div class="daily-numbers-wrapper">
+              <p class="number-daily">1407</p>
+              <div class="percent-daily decrease"><img src="./images/icon-down.svg" alt="icon down" class="icon-down_sm"> <span>12%</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">z83studio</a>.
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
